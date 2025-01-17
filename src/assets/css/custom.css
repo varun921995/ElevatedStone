@@ -1,0 +1,119 @@
+.esNavbar {
+	background-color: #cfad51;
+}
+.logo {
+	height: 5rem;
+	@media only screen and (max-width: 992px) and (min-width: 480px) {
+		height: 4rem;
+	}
+	@media only screen and (max-width: 480px) {
+		height: 3rem;
+	}
+}
+
+.text {
+	font-family: "Funnel Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 26px;
+	color: #bb952d;
+	@media only screen and (max-width: 992px) {
+		font-size: 20px;
+	}
+}
+
+.active {
+	color: #cfad51 !important;
+	font-weight: bold;
+	border-bottom-color: #cfad51;
+	border-style: solid;
+	border-bottom-width: thin;
+}
+.nav-link {
+	color: rgb(177, 175, 175); /* Default color */
+	text-decoration: none;
+	font-size: medium;
+	@media only screen and (max-width: 432px) {
+		font-size: 16px;
+	}
+}
+.nav-link:hover {
+	color: #cfad51 !important; /* Default color */
+	text-decoration: none;
+	border-bottom-color: #cfad51;
+	border-style: solid;
+	border-bottom-width: thin;
+}
+.navbar-text {
+	color: #3b3b3b !important;
+	font-family: "Pattaya", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 46px;
+	margin-left: 2.5%;
+	margin-top: 15%;
+	@media only screen and (max-width: 480px) {
+		font-size: 24px;
+	}
+	@media only screen and (max-width: 992px) and (min-width: 480px) {
+		font-size: 32px;
+	}
+}
+.navbar-toggler {
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+.navbar-collapse {
+	@media (max-width: 992px) {
+		padding-left: 2.5%;
+	}
+}
+.pageHeading {
+	color: #bb952d !important;
+	font-family: "Funnel Display", serif;
+	font-style: normal;
+}
+
+.our-services-image {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.our-services-subHeading {
+	font-family: "Funnel Display", serif;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 2px;
+	font-size: 24px;
+	color: #bb952d;
+}
+
+.our-services-text {
+	font-family: "Funnel Display", serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+	text-align: justify;
+}
+
+hr {
+	border: none;
+	border-top: 3px double #bb952d;
+	color: #bb952d;
+	overflow: visible;
+	text-align: center;
+	height: 5px;
+}
+
+hr::after {
+	background: #fff;
+	content: "§";
+	padding: 0 4px;
+	position: relative;
+	top: -13px;
+}
