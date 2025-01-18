@@ -1,7 +1,6 @@
-import React from "react";
 import ImageCard from "./Partials/ImageCard";
 import ESCarousel from "./Partials/Carousel";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import CardData from "../assets/dummyData/CardsData";
 const Home = () => {
 	return (
