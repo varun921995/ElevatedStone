@@ -1,5 +1,3 @@
-import { describe } from "node:test";
-
 export default [
 	{
 		id: 1,

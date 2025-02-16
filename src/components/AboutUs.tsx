@@ -43,7 +43,6 @@ const AboutUs = () => {
 				</p>
 
 				<p className="our-services-text">
-					{" "}
 					Elevated Stone Design Inc. is not just about craftsmanship; it's also
 					about innovation and responsibility. The company employs advanced
 					technologies like LT 55 3D/2D software integrated with AutoCAD for
