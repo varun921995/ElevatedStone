@@ -1,13 +1,13 @@
-.esNavbar {
-	background-color: #cfad51;
-}
 .logo {
-	height: 5rem;
+	height: 6rem;
+	width: 6rem;
 	@media only screen and (max-width: 992px) and (min-width: 480px) {
 		height: 4rem;
+		width: 4rem;
 	}
 	@media only screen and (max-width: 480px) {
 		height: 3rem;
+		width: 3rem;
 	}
 }
 
@@ -17,7 +17,7 @@
 	font-weight: 300;
 	font-style: normal;
 	font-size: 26px;
-	color: #bb952d;
+	color: #cc9e21;
 	@media only screen and (max-width: 992px) {
 		font-size: 20px;
 	}
@@ -46,13 +46,15 @@
 	border-bottom-width: thin;
 }
 .navbar-text {
-	color: #3b3b3b !important;
-	font-family: "Pattaya", serif;
-	font-weight: 400;
+	color: #cc9e21 !important;
+	font-family: "Roboto", serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
 	font-style: normal;
+	font-variation-settings: "wdth" 100;
 	font-size: 46px;
 	margin-left: 2.5%;
-	margin-top: 15%;
+	vertical-align: bottom;
 	@media only screen and (max-width: 480px) {
 		font-size: 24px;
 	}
@@ -73,15 +75,9 @@
 	}
 }
 .pageHeading {
-	color: #bb952d !important;
+	color: #cc9e21 !important;
 	font-family: "Funnel Display", serif;
 	font-style: normal;
-}
-
-.our-services-image {
-	height: 100%;
-	width: 100%;
-	border-radius: 10px;
 }
 
 .our-services-subHeading {
@@ -90,7 +86,7 @@
 	font-style: normal;
 	letter-spacing: 2px;
 	font-size: 24px;
-	color: #bb952d;
+	color: #cc9e21;
 }
 
 .our-services-text {
@@ -103,8 +99,8 @@
 
 hr {
 	border: none;
-	border-top: 3px double #bb952d;
-	color: #bb952d;
+	border-top: 3px double #cc9e21;
+	color: #cc9e21;
 	overflow: visible;
 	text-align: center;
 	height: 5px;
@@ -116,4 +112,34 @@ hr::after {
 	padding: 0 4px;
 	position: relative;
 	top: -13px;
+}
+
+.zoom-img img {
+	transition: all 0.4s ease;
+}
+
+.zoom-img img:hover {
+	overflow: auto;
+	transform: scale(0.9);
+}
+
+.footer-company-title {
+	color: #cc9e21;
+}
+.footer-text {
+	color: rgb(177, 175, 175);
+}
+.es-image {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.kitchen-bath-imag {
+	min-height: 250px !important;
+	max-height: 250px !important;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }

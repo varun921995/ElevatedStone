@@ -9,6 +9,8 @@ import UniqueInstall from "./components/UniqueInstall";
 import { Outlet } from "react-router-dom";
 import PlanningCare from "./components/PlanningCare";
 import OurServices from "./components/OurServices";
+import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
 
 export const Router = createBrowserRouter([
 	{
@@ -16,10 +18,11 @@ export const Router = createBrowserRouter([
 		element: <App></App>,
 		children: [
 			{ index: true, element: <Home /> },
-			{ path: "/kitchenBath", element: <KitchenBath /> },
-			{ path: "/uniqueInstall", element: <UniqueInstall /> },
-			{ path: "/planningCare", element: <PlanningCare /> },
-			{ path: "/ourServices", element: <OurServices /> },
+			{ path: "kitchenBath", element: <KitchenBath /> },
+			{ path: "uniqueInstall", element: <UniqueInstall /> },
+			{ path: "planningCare", element: <PlanningCare /> },
+			{ path: "ourServices", element: <OurServices /> },
+			{ path: "aboutUs", element: <AboutUs /> },
 		],
 	},
 ]);
@@ -29,6 +32,7 @@ function App() {
 			<NavbarTop></NavbarTop>
 			<ESNavbar />
 			<Outlet /> {/* Placeholder for child routes */}
+			<Footer></Footer>
 		</>
 	);
 }
