@@ -38,6 +38,7 @@ const UniqueInstall = () => {
 								large={ui1}
 								alt="Unique Install 1"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -48,6 +49,7 @@ const UniqueInstall = () => {
 								large={ui2}
 								alt="Unique Install 2"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -58,6 +60,7 @@ const UniqueInstall = () => {
 								large={ui3}
 								alt="Unique Install 3"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>

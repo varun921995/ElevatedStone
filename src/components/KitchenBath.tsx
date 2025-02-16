@@ -82,6 +82,7 @@ const KitchenBath = () => {
 								large={b1}
 								alt="Bath 1"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -92,6 +93,7 @@ const KitchenBath = () => {
 								large={b2}
 								alt="Bath 2"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -102,6 +104,7 @@ const KitchenBath = () => {
 								large={b3}
 								alt="Bath 3"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -112,6 +115,7 @@ const KitchenBath = () => {
 								large={b4}
 								alt="Bath 4"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
