@@ -40,6 +40,7 @@ const KitchenBath = () => {
 								large={k1}
 								alt="Kitchen 1"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -50,6 +51,7 @@ const KitchenBath = () => {
 								large={k3}
 								alt="Kitchen 2"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -60,6 +62,7 @@ const KitchenBath = () => {
 								large={k2}
 								alt="Kitchen 3"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
@@ -70,6 +73,7 @@ const KitchenBath = () => {
 								large={k4}
 								alt="Kitchen 4"
 								className="kitchen-bath-imag "
+								hideDownload={true}
 							/>
 						</div>
 					</Col>
