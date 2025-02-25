@@ -1,15 +1,37 @@
 import { Container, Image } from "react-bootstrap";
-import b3 from "/img/KitchenAndBath/b3.jpg";
+import b1 from "/img/KitchenAndBath/b1.jpg";
+import k1 from "/img/KitchenAndBath/1.jpg";
+import fabrication1 from "/img/OurServices/image4.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Home = () => {
 	return (
 		<>
 			<Container fluid className="home-page-img-container">
 				<div className="home-page-zoom-img">
-					<Image src={b3} className="es-carousel-image" />
+					<Image src={k1} className="es-carousel-image" />
 					<div className="bottom-left">
 						<h1>
-							Kitchen & Bath <MdOutlineKeyboardArrowRight />
+							Kitchen <MdOutlineKeyboardArrowRight />
+						</h1>
+					</div>
+				</div>
+			</Container>
+			<Container fluid className="home-page-img-container my-3">
+				<div className="home-page-zoom-img">
+					<Image src={b1} className="es-carousel-image" />
+					<div className="bottom-left">
+						<h1>
+							Bath <MdOutlineKeyboardArrowRight />
+						</h1>
+					</div>
+				</div>
+			</Container>
+			<Container fluid className="home-page-img-container my-3">
+				<div className="home-page-zoom-img">
+					<Image src={fabrication1} className="es-carousel-image" />
+					<div className="bottom-left">
+						<h1>
+							Fabrication <MdOutlineKeyboardArrowRight />
 						</h1>
 					</div>
 				</div>
