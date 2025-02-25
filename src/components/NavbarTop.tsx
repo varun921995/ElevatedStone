@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const NavbarTop = () => {
 	return (
 		<div>
-			<Navbar className="bg-dark" variant={"dark"}>
+			<Navbar className="bg-light" variant={"light"}>
 				<Container fluid className="d-flex justify-content-center">
 					<Row>
 						<Navbar.Brand href="#home">

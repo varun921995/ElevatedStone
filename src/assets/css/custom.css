@@ -16,22 +16,22 @@
 	font-optical-sizing: auto;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 26px;
-	color: #cc9e21;
+	font-size: 20px;
+	color: #286dc7;
 	@media only screen and (max-width: 992px) {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
 .active {
-	color: #cfad51 !important;
+	color: #286dc7 !important;
 	font-weight: bold;
-	border-bottom-color: #cfad51;
+	border-bottom-color: #286dc7;
 	border-style: solid;
 	border-bottom-width: thin;
 }
 .nav-link {
-	color: rgb(177, 175, 175); /* Default color */
+	color: #636262;
 	text-decoration: none;
 	font-size: medium;
 	@media only screen and (max-width: 432px) {
@@ -39,14 +39,14 @@
 	}
 }
 .nav-link:hover {
-	color: #cfad51 !important; /* Default color */
+	color: #286dc7 !important; /* Default color */
 	text-decoration: none;
-	border-bottom-color: #cfad51;
+	border-bottom-color: #286dc7;
 	border-style: solid;
 	border-bottom-width: thin;
 }
 .navbar-text {
-	color: #cc9e21 !important;
+	color: #286dc7 !important;
 	font-family: "Roboto", serif;
 	font-optical-sizing: auto;
 	font-weight: 600;
@@ -75,7 +75,7 @@
 	}
 }
 .pageHeading {
-	color: #cc9e21 !important;
+	color: #286dc7 !important;
 	font-family: "Funnel Display", serif;
 	font-style: normal;
 }
@@ -86,7 +86,7 @@
 	font-style: normal;
 	letter-spacing: 2px;
 	font-size: 24px;
-	color: #cc9e21;
+	color: #286dc7;
 }
 
 .our-services-text {
@@ -99,8 +99,8 @@
 
 hr {
 	border: none;
-	border-top: 3px double #cc9e21;
-	color: #cc9e21;
+	border-top: 3px double #286dc7;
+	color: #286dc7;
 	overflow: visible;
 	text-align: center;
 	height: 5px;
@@ -124,10 +124,10 @@ hr::after {
 }
 
 .footer-company-title {
-	color: #cc9e21;
+	color: #286dc7;
 }
 .footer-text {
-	color: rgb(177, 175, 175);
+	color: #636262;
 }
 .es-image {
 	height: 100%;
@@ -142,4 +142,12 @@ hr::after {
 	width: 100%;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.es-carousel-image {
+	min-width: 75vw;
+	/* max-width: 100vw; */
+	max-height: 75vh;
+	margin: auto;
+	filter: brightness(0.75);
 }

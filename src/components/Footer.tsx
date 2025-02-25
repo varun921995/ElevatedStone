@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<>
 			<Container fluid>
-				<Row className="bg-dark text-white p-4">
+				<Row className="bg-light p-4">
 					<Col className="my-3 mx-5">
 						<Image className="logo" src={logo}></Image>
 						<h2 className="footer-company-title">Elevated Stone</h2>

@@ -7,7 +7,7 @@ import { CgNotes } from "react-icons/cg";
 const ESNavbar = () => {
 	return (
 		<>
-			<Navbar bg="dark" variant="dark" expand="lg">
+			<Navbar bg="light" variant="light" expand="lg">
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Container>
@@ -32,7 +32,7 @@ const ESNavbar = () => {
 								<Nav.Link as={NavLink} to="/aboutUs">
 									About Us
 								</Nav.Link>
-								<Button className="mx-3" variant="btn btn-outline-warning">
+								<Button className="mx-3" variant="btn btn-outline-primary">
 									<CgNotes className="mx-1" />
 									Get Quote
 								</Button>

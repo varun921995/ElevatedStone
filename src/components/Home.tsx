@@ -1,7 +1,6 @@
-import ImageCard from "./Partials/ImageCard";
 import ESCarousel from "./Partials/Carousel";
-import { Col, Container, Row } from "react-bootstrap";
-import CardData from "../assets/dummyData/CardsData";
+import { Container } from "react-bootstrap";
+
 const Home = () => {
 	return (
 		<>
@@ -14,18 +13,18 @@ const Home = () => {
 					templating and shipping
 				</span>
 			</Container>
-
+			{/* 
 			<Container className="my-4">
-				{/* Row to contain cards */}
+			
 				<Row className="g-4">
 					{CardData.map((card) => (
 						<Col key={card.id} xs={12} sm={6} md={4} lg={3}>
-							{/* Card */}
+						
 							<ImageCard card={card}></ImageCard>
 						</Col>
 					))}
 				</Row>
-			</Container>
+			</Container> */}
 		</>
 	);
 };
