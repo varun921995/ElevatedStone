@@ -16,10 +16,10 @@
 	font-optical-sizing: auto;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 20px;
+	font-size: 22px;
 	color: #286dc7;
 	@media only screen and (max-width: 992px) {
-		font-size: 16px;
+		font-size: 18px;
 	}
 }
 
@@ -150,4 +150,31 @@ hr::after {
 	max-height: 75vh;
 	margin: auto;
 	filter: brightness(0.75);
+}
+
+.home-page-zoom-img {
+	width: 100%;
+	overflow: clip;
+}
+.home-page-zoom-img img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: all 3s ease;
+}
+
+.home-page-zoom-img img:hover {
+	transform: scale(1.09);
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 15%;
+	left: 5%;
+}
+
+.home-page-img-container {
+	position: relative;
+	text-align: center;
+	color: white;
 }

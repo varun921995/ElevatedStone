@@ -1,10 +1,19 @@
-import ESCarousel from "./Partials/Carousel";
-import { Container } from "react-bootstrap";
-
+import { Container, Image } from "react-bootstrap";
+import b3 from "/img/KitchenAndBath/b3.jpg";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Home = () => {
 	return (
 		<>
-			<ESCarousel></ESCarousel>
+			<Container fluid className="home-page-img-container">
+				<div className="home-page-zoom-img">
+					<Image src={b3} className="es-carousel-image" />
+					<div className="bottom-left">
+						<h1>
+							Kitchen & Bath <MdOutlineKeyboardArrowRight />
+						</h1>
+					</div>
+				</div>
+			</Container>
 			<Container className="my-4">
 				<span className="text">
 					We will happily pair you with our closest partnered store. “Our team
