@@ -8,7 +8,15 @@ import b1 from "/img/KitchenAndBath/b1.jpg";
 import b2 from "/img/KitchenAndBath/b2.jpg";
 import b3 from "/img/KitchenAndBath/b3.jpg";
 import b4 from "/img/KitchenAndBath/b4.jpg";
+import { useLayoutEffect, useState } from "react";
 const KitchenBath = () => {
+	const [isReady, setIsReady] = useState(false);
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+		setIsReady(true); // Ensures the page starts at the top
+	}, []);
+
+	if (!isReady) return null;
 	return (
 		<>
 			<Container className="my-4">

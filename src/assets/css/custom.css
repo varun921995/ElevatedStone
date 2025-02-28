@@ -23,14 +23,14 @@
 	}
 }
 
-.active {
+.active.es-navbar {
 	color: #286dc7 !important;
 	font-weight: bold;
 	border-bottom-color: #286dc7;
 	border-style: solid;
 	border-bottom-width: thin;
 }
-.nav-link {
+.nav-link.es-navbar {
 	color: #636262;
 	text-decoration: none;
 	font-size: medium;
@@ -38,7 +38,7 @@
 		font-size: 16px;
 	}
 }
-.nav-link:hover {
+.nav-link.es-navbar:hover {
 	color: #286dc7 !important; /* Default color */
 	text-decoration: none;
 	border-bottom-color: #286dc7;
@@ -97,7 +97,7 @@
 	text-align: justify;
 }
 
-hr {
+/* hr {
 	border: none;
 	border-top: 3px double #286dc7;
 	color: #286dc7;
@@ -112,7 +112,7 @@ hr::after {
 	padding: 0 4px;
 	position: relative;
 	top: -13px;
-}
+} */
 
 .zoom-img img {
 	transition: all 0.4s ease;

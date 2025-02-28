@@ -11,6 +11,7 @@ import PlanningCare from "./components/PlanningCare";
 import OurServices from "./components/OurServices";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
+import ContactUs from "./components/ContactUs";
 
 export const Router = createBrowserRouter([
 	{
@@ -23,6 +24,7 @@ export const Router = createBrowserRouter([
 			{ path: "planningCare", element: <PlanningCare /> },
 			{ path: "ourServices", element: <OurServices /> },
 			{ path: "aboutUs", element: <AboutUs /> },
+			{ path: "contactUs", element: <ContactUs /> },
 		],
 	},
 ]);
