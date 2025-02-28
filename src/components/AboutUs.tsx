@@ -1,5 +1,6 @@
-import { Container } from "react-bootstrap";
-
+import { Col, Container, Row } from "react-bootstrap";
+import ImageCard from "./Partials/ImageCard";
+import TeamData from "../data/TeamData";
 const AboutUs = () => {
 	return (
 		<>
@@ -52,6 +53,23 @@ const AboutUs = () => {
 					wasted stone and offer unmatched discounting on premium vanities made
 					from “wasted materials”.
 				</p>
+			</Container>
+			<Container>
+				<Row>
+					<span className="our-services-subHeading">Team</span>
+				</Row>
+				<Row>
+					{/* Centering the row */}
+					{TeamData.map((t) => (
+						<Col
+							md={3}
+							xs={6}
+							className="my-3"
+							style={{ minHeight: "fit-content" }}>
+							<ImageCard card={t}></ImageCard>
+						</Col>
+					))}
+				</Row>
 			</Container>
 		</>
 	);

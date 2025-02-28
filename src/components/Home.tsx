@@ -52,7 +52,7 @@ const Home = () => {
 					</Nav.Link>
 				</div>
 			</Container>
-			<Container fluid className="my-4">
+			<Container className="my-4">
 				<span className="text">
 					We will happily pair you with our closest partnered store. “Our team
 					will happily quote your project for you through a partnered store, and
@@ -60,7 +60,7 @@ const Home = () => {
 					templating and shipping
 				</span>
 			</Container>
-			<Container fluid className="my-4">
+			<Container className="my-4">
 				<div className="pageHeading">
 					<h1>Testimonials</h1>
 				</div>
@@ -68,18 +68,6 @@ const Home = () => {
 			<Container>
 				<TestimonialCarousel></TestimonialCarousel>
 			</Container>
-			{/* 
-			<Container className="my-4">
-			
-				<Row className="g-4">
-					{CardData.map((card) => (
-						<Col key={card.id} xs={12} sm={6} md={4} lg={3}>
-						
-							<ImageCard card={card}></ImageCard>
-						</Col>
-					))}
-				</Row>
-			</Container> */}
 		</>
 	);
 };

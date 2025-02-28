@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import ContactUsForm from "./Partials/ContactUsForm";
 
 const ContactUs = () => {
 	return (
@@ -7,6 +8,9 @@ const ContactUs = () => {
 				<div className="pageHeading">
 					<h1>Contact Us</h1>
 				</div>
+			</Container>
+			<Container>
+				<ContactUsForm />
 			</Container>
 		</>
 	);
