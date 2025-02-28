@@ -55,7 +55,7 @@ const TestimonialCarousel = () => {
 								<Card
 									className="text-center rounded-3" // Adding rounded corners
 									style={{
-										backgroundColor: "#286dc7", // Light background color (you can choose any color)
+										backgroundColor: "#3d6dac", // Light background color (you can choose any color)
 										overflow: "hidden",
 										width: "100%",
 										minHeight: "300px",
