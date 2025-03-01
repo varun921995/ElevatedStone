@@ -62,8 +62,10 @@ const AboutUs = () => {
 					{/* Centering the row */}
 					{TeamData.map((t) => (
 						<Col
-							md={3}
-							xs={6}
+							md={6}
+							lg={3}
+							xs={12}
+							key={t.id}
 							className="my-3"
 							style={{ minHeight: "fit-content" }}>
 							<ImageCard card={t}></ImageCard>
