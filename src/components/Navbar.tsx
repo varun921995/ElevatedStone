@@ -38,10 +38,12 @@ const ESNavbar = () => {
 								<Nav.Link as={NavLink} to="/contactUs" className="es-navbar">
 									Contact Us
 								</Nav.Link>
-								<Button className="mx-3" variant="btn btn-outline-primary">
-									<CgNotes className="mx-1" />
-									Get Quote
-								</Button>
+								<Nav.Link as={NavLink} to="/contactUs">
+									<Button className="mx-3" variant="btn btn-outline-primary">
+										<CgNotes className="mx-1" />
+										Get Quote
+									</Button>
+								</Nav.Link>
 							</Nav>
 						</Row>
 					</Container>

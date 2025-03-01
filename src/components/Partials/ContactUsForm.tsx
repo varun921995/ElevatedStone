@@ -9,9 +9,11 @@ interface FormErrors {
 
 const ContactUsForm = () => {
 	const [attachment, setAttachment] = useState<File | null>(null);
+	const [isLoading, setIsLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
 		replyToEmail: "",
+		subject: "",
 		message: "",
 		attachment: {},
 	});
@@ -26,12 +28,14 @@ const ContactUsForm = () => {
 		if (!formData.replyToEmail.trim()) newErrors.email = "Email is required";
 		else if (!emailRegex.test(formData.replyToEmail))
 			newErrors.email = "Invalid email format";
+		if (attachment && attachment.type === "application/pdf")
+			newErrors.file = "Invalid file format";
 		return newErrors;
 	};
 
 	const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const file = event.target.files?.[0];
-		if (file && file.type === "application/pdf") {
+		if (file) {
 			setAttachment(file);
 		} else {
 			console.log("Invalid file format");
@@ -43,7 +47,6 @@ const ContactUsForm = () => {
 	): Promise<{ filename: string; base64Content: string }> => {
 		return new Promise((resolve, reject) => {
 			const reader = new FileReader();
-			console.log("hi---2");
 			reader.onload = () => {
 				const base64String = reader.result as string;
 				resolve({
@@ -53,29 +56,41 @@ const ContactUsForm = () => {
 			};
 
 			reader.onerror = () => reject(new Error("Error reading file"));
-
 			reader.readAsDataURL(file);
 		});
 	};
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
-		const validationErrors = validate();
-		if (Object.keys(validationErrors).length > 0) {
-			setErrors(validationErrors);
-			setSuccess(false);
-		} else {
-			let fileData = null;
-			if (attachment) {
-				try {
-					fileData = await convertFileToBase64(attachment);
-				} catch (error) {
-					console.log(error);
+		try {
+			setIsLoading(true);
+			const validationErrors = validate();
+			if (Object.keys(validationErrors).length > 0) {
+				setErrors(validationErrors);
+				setSuccess(false);
+			} else {
+				let fileData = null;
+				if (attachment) {
+					try {
+						fileData = await convertFileToBase64(attachment);
+					} catch (error) {
+						console.error(error);
+					}
 				}
-			}
 
-			await sendForm(fileData);
-			setFormData({ name: "", replyToEmail: "", message: "", attachment: {} });
+				await sendForm(fileData);
+				setFormData({
+					name: "",
+					replyToEmail: "",
+					subject: "",
+					message: "",
+					attachment: {},
+				});
+			}
+		} catch (error) {
+			console.error(error);
+		} finally {
+			setIsLoading(false);
 		}
 	};
 
@@ -98,7 +113,7 @@ const ContactUsForm = () => {
 				setSuccess(true);
 			}
 		} catch (err) {
-			console.log(err);
+			console.error(err);
 		}
 	};
 
@@ -135,7 +150,17 @@ const ContactUsForm = () => {
 						{errors.email}
 					</Form.Control.Feedback>
 				</Form.Group>
-
+				<Form.Group controlId="formSubject" className="mb-3">
+					<Form.Label>Subject</Form.Label>
+					<Form.Control
+						type="text"
+						placeholder="Subject"
+						value={formData.subject}
+						onChange={(e) =>
+							setFormData({ ...formData, subject: e.target.value })
+						}
+					/>
+				</Form.Group>
 				<Form.Group controlId="formMessage" className="mb-3">
 					<Form.Label>Message</Form.Label>
 					<Form.Control
@@ -158,8 +183,8 @@ const ContactUsForm = () => {
 					/>
 				</Form.Group>
 
-				<Button variant="primary" type="submit">
-					Submit
+				<Button variant="primary" type="submit" disabled={isLoading}>
+					{isLoading ? "submiting" : "Submit"}
 				</Button>
 			</Form>
 		</Container>
