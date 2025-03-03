@@ -95,6 +95,7 @@ const ContactUsForm = () => {
 					message: "",
 					attachment: {},
 				});
+				setErrors({});
 				if (inputFile.current) {
 					inputFile.current.type = "text";
 					inputFile.current.value = ""; // Temporarily change type
