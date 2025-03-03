@@ -1,6 +1,8 @@
 import { Col, Container, Row, Image, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "/img/logo.png";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
 	return (
@@ -37,7 +39,7 @@ const Footer = () => {
 					<Col className="my-3 mx-5">
 						<h4 className="footer-text">Contact Us</h4>
 						<p className="footer-text">Email : admin@elevatedstone.ca</p>
-						<p className="footer-text">Phone : xxxxxxxxxxx</p>
+						<FaSquareInstagram size={30} /> <BsLinkedin size={30} />
 					</Col>
 				</Row>
 			</Container>

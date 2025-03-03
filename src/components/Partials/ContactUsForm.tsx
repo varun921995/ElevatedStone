@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Form, Button, Alert, Container } from "react-bootstrap";
 import axios from "axios";
 interface FormErrors {
@@ -8,7 +8,7 @@ interface FormErrors {
 }
 
 const ContactUsForm = () => {
-	const [attachment, setAttachment] = useState<File | null>(null);
+	const [isValidAttachment, setIsValidAttachment] = useState(true);
 	const [isLoading, setIsLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
@@ -19,7 +19,7 @@ const ContactUsForm = () => {
 	});
 	const [errors, setErrors] = useState<FormErrors>({});
 	const [success, setSuccess] = useState(false);
-
+	const inputFile = useRef<HTMLInputElement>(null);
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 	const validate = () => {
@@ -28,17 +28,27 @@ const ContactUsForm = () => {
 		if (!formData.replyToEmail.trim()) newErrors.email = "Email is required";
 		else if (!emailRegex.test(formData.replyToEmail))
 			newErrors.email = "Invalid email format";
-		if (attachment && attachment.type === "application/pdf")
+		if (!isValidAttachment) {
 			newErrors.file = "Invalid file format";
+		}
 		return newErrors;
 	};
 
-	const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+	const handleFileChange = async (
+		event: React.ChangeEvent<HTMLInputElement>,
+	) => {
 		const file = event.target.files?.[0];
-		if (file) {
-			setAttachment(file);
-		} else {
+		let fileData = null;
+		if (file && file.type === "application/pdf") {
+			setIsValidAttachment(true);
+			fileData = await convertFileToBase64(file);
+			setFormData({ ...formData, attachment: fileData });
+		} else if (file && file.type != "application/pdf") {
+			setIsValidAttachment(false);
 			console.log("Invalid file format");
+		} else {
+			setIsValidAttachment(true);
+			setFormData({ ...formData, attachment: {} });
 		}
 	};
 
@@ -47,6 +57,7 @@ const ContactUsForm = () => {
 	): Promise<{ filename: string; base64Content: string }> => {
 		return new Promise((resolve, reject) => {
 			const reader = new FileReader();
+
 			reader.onload = () => {
 				const base64String = reader.result as string;
 				resolve({
@@ -62,23 +73,17 @@ const ContactUsForm = () => {
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
+
 		try {
 			setIsLoading(true);
 			const validationErrors = validate();
+
 			if (Object.keys(validationErrors).length > 0) {
+				console.log(validationErrors);
 				setErrors(validationErrors);
 				setSuccess(false);
 			} else {
-				let fileData = null;
-				if (attachment) {
-					try {
-						fileData = await convertFileToBase64(attachment);
-					} catch (error) {
-						console.error(error);
-					}
-				}
-
-				await sendForm(fileData);
+				await sendForm();
 				setFormData({
 					name: "",
 					replyToEmail: "",
@@ -86,6 +91,11 @@ const ContactUsForm = () => {
 					message: "",
 					attachment: {},
 				});
+				if (inputFile.current) {
+					inputFile.current.type = "text";
+					inputFile.current.value = ""; // Temporarily change type
+					inputFile.current.type = "file";
+				}
 			}
 		} catch (error) {
 			console.error(error);
@@ -94,10 +104,7 @@ const ContactUsForm = () => {
 		}
 	};
 
-	const sendForm = async (
-		fileData: { filename: string; base64Content: string } | null,
-	) => {
-		setFormData({ ...formData, attachment: fileData ? fileData : {} });
+	const sendForm = async () => {
 		const payload = JSON.stringify(formData);
 
 		try {
@@ -111,6 +118,9 @@ const ContactUsForm = () => {
 
 			if (response.status === 200) {
 				setSuccess(true);
+				setTimeout(() => {
+					setSuccess(false);
+				}, 5000);
 			}
 		} catch (err) {
 			console.error(err);
@@ -175,10 +185,11 @@ const ContactUsForm = () => {
 				</Form.Group>
 
 				<Form.Group controlId="formFile" className="mb-3">
-					<Form.Label>Attachment</Form.Label>
+					<Form.Label>Attachment (Only .pdf format)</Form.Label>
 					<Form.Control
 						type="file"
 						accept="application/pdf"
+						ref={inputFile}
 						onChange={handleFileChange}
 					/>
 				</Form.Group>
