@@ -39,7 +39,14 @@ const Footer = () => {
 					<Col className="my-3 mx-5">
 						<h4 className="footer-text">Contact Us</h4>
 						<p className="footer-text">Email : admin@elevatedstone.ca</p>
-						<FaSquareInstagram size={30} /> <BsLinkedin size={30} />
+						<a
+							href="https://www.instagram.com/elevated_stone_design/"
+							className="mx-2">
+							<FaSquareInstagram size={35} />
+						</a>
+						<a href="https://www.linkedin.com/company/elevated-stone-design/">
+							<BsLinkedin size={32} />
+						</a>
 					</Col>
 				</Row>
 			</Container>
