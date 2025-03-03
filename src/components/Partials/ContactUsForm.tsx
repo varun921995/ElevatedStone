@@ -5,6 +5,8 @@ interface FormErrors {
 	name?: string;
 	email?: string;
 	file?: string;
+	subject?: string;
+	message?: string;
 }
 
 const ContactUsForm = () => {
@@ -28,6 +30,8 @@ const ContactUsForm = () => {
 		if (!formData.replyToEmail.trim()) newErrors.email = "Email is required";
 		else if (!emailRegex.test(formData.replyToEmail))
 			newErrors.email = "Invalid email format";
+		if (!formData.subject.trim()) newErrors.subject = "Subject is required";
+		if (!formData.message.trim()) newErrors.message = "Message is required";
 		if (!isValidAttachment) {
 			newErrors.file = "Invalid file format";
 		}
@@ -169,7 +173,11 @@ const ContactUsForm = () => {
 						onChange={(e) =>
 							setFormData({ ...formData, subject: e.target.value })
 						}
+						isInvalid={!!errors.subject}
 					/>
+					<Form.Control.Feedback type="invalid">
+						{errors.subject}
+					</Form.Control.Feedback>
 				</Form.Group>
 				<Form.Group controlId="formMessage" className="mb-3">
 					<Form.Label>Message</Form.Label>
@@ -181,7 +189,11 @@ const ContactUsForm = () => {
 						onChange={(e) =>
 							setFormData({ ...formData, message: e.target.value })
 						}
+						isInvalid={!!errors.message}
 					/>
+					<Form.Control.Feedback type="invalid">
+						{errors.message}
+					</Form.Control.Feedback>
 				</Form.Group>
 
 				<Form.Group controlId="formFile" className="mb-3">
