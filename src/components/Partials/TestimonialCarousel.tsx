@@ -1,6 +1,5 @@
 import { Carousel, Card, Row, Col } from "react-bootstrap";
 import Testimonials from "../../data/Testimonials";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const TestimonialCarousel = () => {
 	return (
 		<Carousel
