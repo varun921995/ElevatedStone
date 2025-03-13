@@ -1,6 +1,7 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import OurServicesData from "../data/OurServicesData";
 import { useLayoutEffect, useState } from "react";
+import ContactUsFooter from "./Partials/ContactUsFooter";
 const OurServices = () => {
 	const [isReady, setIsReady] = useState(false);
 	useLayoutEffect(() => {
@@ -64,6 +65,7 @@ const OurServices = () => {
 					)}
 				</div>
 			))}
+			<ContactUsFooter></ContactUsFooter>
 		</>
 	);
 };

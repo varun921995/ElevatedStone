@@ -3,6 +3,7 @@ import ModalImage from "react-modal-image";
 import ui1 from "/img/UniqueInstalls/ui1.jpg";
 import ui2 from "/img/UniqueInstalls/ui2.jpg";
 import ui3 from "/img/UniqueInstalls/ui3.jpg";
+import ContactUsFooter from "./Partials/ContactUsFooter";
 const UniqueInstall = () => {
 	return (
 		<>
@@ -66,6 +67,7 @@ const UniqueInstall = () => {
 					</Col>
 				</Row>
 			</Container>
+			<ContactUsFooter></ContactUsFooter>
 		</>
 	);
 };

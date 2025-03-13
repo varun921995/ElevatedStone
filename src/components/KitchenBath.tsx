@@ -9,6 +9,7 @@ import b2 from "/img/KitchenAndBath/b2.jpg";
 import b3 from "/img/KitchenAndBath/b3.jpg";
 import b4 from "/img/KitchenAndBath/b4.jpg";
 import { useLayoutEffect, useState } from "react";
+import ContactUsFooter from "./Partials/ContactUsFooter";
 const KitchenBath = () => {
 	const [isReady, setIsReady] = useState(false);
 	useLayoutEffect(() => {
@@ -133,6 +134,7 @@ const KitchenBath = () => {
 					</Col>
 				</Row>
 			</Container>
+			<ContactUsFooter></ContactUsFooter>
 		</>
 	);
 };

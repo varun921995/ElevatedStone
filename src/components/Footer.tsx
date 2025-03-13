@@ -7,11 +7,13 @@ import { BsLinkedin } from "react-icons/bs";
 const Footer = () => {
 	return (
 		<>
-			<Container fluid className="my-4">
+			<Container fluid>
 				<Row className="bg-light p-4">
 					<Col className="my-3 mx-5">
-						<Image className="logo" src={logo}></Image>
-						<h2 className="footer-company-title">Elevated Stone</h2>
+						<h2 className="footer-company-title">
+							<Image className="logo" src={logo}></Image>{" "}
+							<span style={{ padding: "10% 0%" }}>Elevated Stone</span>
+						</h2>
 					</Col>
 					<Col className="my-3 mx-5">
 						<Nav className="flex-column fs-5">

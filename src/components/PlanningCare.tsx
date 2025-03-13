@@ -1,6 +1,15 @@
 import { Col, Container, Row } from "react-bootstrap";
+import ContactUsFooter from "./Partials/ContactUsFooter";
+import { useState, useLayoutEffect } from "react";
 
 const PlanningCare = () => {
+	const [isReady, setIsReady] = useState(false);
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+		setIsReady(true); // Ensures the page starts at the top
+	}, []);
+
+	if (!isReady) return null;
 	return (
 		<>
 			<Container className="my-4">
@@ -46,6 +55,7 @@ const PlanningCare = () => {
 					</Col>
 				</Row>
 			</Container>
+			<ContactUsFooter></ContactUsFooter>
 		</>
 	);
 };

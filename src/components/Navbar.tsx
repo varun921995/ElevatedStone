@@ -8,7 +8,7 @@ const ESNavbar = () => {
 	return (
 		<>
 			<Navbar bg="light" variant="light" expand="lg">
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Toggle aria-controls="basic-navbar-nav" className="mx-2" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Container>
 						<Row>
