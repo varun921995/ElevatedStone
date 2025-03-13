@@ -16,16 +16,7 @@ const TestimonialCarousel = () => {
 							md={12}
 							key={item.id}
 							className="d-flex justify-content-center mb-3">
-							<Card
-								className="text-center rounded-3" // Adding rounded corners
-								style={{
-									backgroundColor: "#3d6dac", // Light background color (you can choose any color)
-									overflow: "hidden",
-									width: "100%",
-									minHeight: "300px",
-									maxHeight: "max-content", // Make the card's height equal to its width
-									boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Optional: adds a soft shadow for better visual depth
-								}}>
+							<Card className="text-center rounded-3 testimonial-card ">
 								<Card.Body className="text-white">
 									<Card.Title style={{ textTransform: "uppercase" }}>
 										<b>{item.title}</b>
