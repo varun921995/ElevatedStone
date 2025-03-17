@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import ImageCard from "./Partials/ImageCard";
-import TeamData from "../data/TeamData";
+import AboutUsAccordion from "./Partials/AboutUsAccordion";
 const AboutUs = () => {
 	return (
 		<>
@@ -22,7 +21,6 @@ const AboutUs = () => {
 					commitment to superior craftsmanship, they set out to establish a
 					company that would not only meet but exceed customer expectations.
 				</p>
-
 				<p className="our-services-text">
 					From the very beginning, Elevated Stone Design Inc. focused on
 					building a robust operational framework. With a production capacity
@@ -54,12 +52,12 @@ const AboutUs = () => {
 					from “wasted materials”.
 				</p>
 			</Container>
-			<Container>
-				<Row>
+			<Container className="my-4">
+				<Row className="my-2">
 					<span className="our-services-subHeading">Team</span>
 				</Row>
 				<Row>
-					{/* Centering the row */}
+					{/* Centering the row
 					{TeamData.map((t) => (
 						<Col
 							md={6}
@@ -70,7 +68,10 @@ const AboutUs = () => {
 							style={{ minHeight: "fit-content" }}>
 							<ImageCard card={t}></ImageCard>
 						</Col>
-					))}
+					))} */}
+					<Col>
+						<AboutUsAccordion></AboutUsAccordion>
+					</Col>
 				</Row>
 			</Container>
 		</>
