@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/custom.css";
-import { createBrowserRouter } from "react-router-dom";
+import {  createHashRouter } from "react-router-dom";
 import Home from "./components/Home";
 import NavbarTop from "./components/NavbarTop";
 import ESNavbar from "./components/Navbar";
@@ -13,7 +13,7 @@ import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 
-export const Router = createBrowserRouter([
+export const Router = createHashRouter([
 	{
 		path: "/",
 		element: <App></App>,
