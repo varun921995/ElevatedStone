@@ -133,11 +133,11 @@ const ContactUsForm = () => {
 	};
 
 	return (
-		<Container className="mt-4">
+		<Container className="my-4">
 			{success && <Alert variant="success">Form submitted successfully!</Alert>}
 			<Form onSubmit={handleSubmit} noValidate>
 				<Form.Group controlId="formName" className="mb-3">
-					<Form.Label>Name</Form.Label>
+					<Form.Label className="text">Name</Form.Label>
 					<Form.Control
 						type="text"
 						placeholder="Enter your name"
@@ -151,7 +151,7 @@ const ContactUsForm = () => {
 				</Form.Group>
 
 				<Form.Group controlId="formEmail" className="mb-3">
-					<Form.Label>Email</Form.Label>
+					<Form.Label className="text">Email</Form.Label>
 					<Form.Control
 						type="email"
 						placeholder="Enter your email"
@@ -166,7 +166,7 @@ const ContactUsForm = () => {
 					</Form.Control.Feedback>
 				</Form.Group>
 				<Form.Group controlId="formSubject" className="mb-3">
-					<Form.Label>Subject</Form.Label>
+					<Form.Label className="text">Subject</Form.Label>
 					<Form.Control
 						type="text"
 						placeholder="Subject"
@@ -181,7 +181,7 @@ const ContactUsForm = () => {
 					</Form.Control.Feedback>
 				</Form.Group>
 				<Form.Group controlId="formMessage" className="mb-3">
-					<Form.Label>Message</Form.Label>
+					<Form.Label className="text">Message</Form.Label>
 					<Form.Control
 						as="textarea"
 						rows={3}
@@ -198,7 +198,9 @@ const ContactUsForm = () => {
 				</Form.Group>
 
 				<Form.Group controlId="formFile" className="mb-3">
-					<Form.Label>Attachment (Only .pdf format)</Form.Label>
+					<Form.Label className="text">
+						Attachment (Only .pdf format)
+					</Form.Label>
 					<Form.Control
 						type="file"
 						accept="application/pdf"
@@ -207,7 +209,7 @@ const ContactUsForm = () => {
 					/>
 				</Form.Group>
 
-				<Button variant="primary" type="submit" disabled={isLoading}>
+				<Button variant="light" type="submit" disabled={isLoading}>
 					{isLoading ? "submiting" : "Submit"}
 				</Button>
 			</Form>

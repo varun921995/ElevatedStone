@@ -7,7 +7,7 @@ const AboutUsAccordion = () => {
 		<Accordion defaultActiveKey="0">
 			<Accordion.Item eventKey="1">
 				<Accordion.Header>
-					<Col xs={6} sm={6} md={3} lg={3}>
+					<Col xs={6} sm={6} md={3} lg={2}>
 						<Image src={ryan} height={150} width={150}></Image>
 					</Col>
 					<Col>
@@ -15,7 +15,7 @@ const AboutUsAccordion = () => {
 						<span>Chief Executive Officer and Founder</span>
 					</Col>
 				</Accordion.Header>
-				<Accordion.Body className="our-services-text">
+				<Accordion.Body className="text dark-text page-footer-wrapper">
 					<p>
 						With over 18 years of experience in the stone industry, Ryan Aube
 						Cormier is a dedicated professional with a deep-rooted passion for
@@ -57,7 +57,7 @@ const AboutUsAccordion = () => {
 			</Accordion.Item>
 			<Accordion.Item eventKey="2">
 				<Accordion.Header>
-					<Col xs={6} sm={6} md={3} lg={3}>
+					<Col xs={6} sm={6} md={3} lg={2}>
 						<Image src={sam} height={150} width={150}></Image>
 					</Col>
 					<Col>
@@ -65,7 +65,7 @@ const AboutUsAccordion = () => {
 						<span>Sam Quackenbush</span>
 					</Col>
 				</Accordion.Header>
-				<Accordion.Body className="our-services-text">
+				<Accordion.Body className="text dark-text page-footer-wrapper">
 					<p>
 						Sam honed his management and business development skills during his
 						studies in Dalhousie University's Masters of Business Administration

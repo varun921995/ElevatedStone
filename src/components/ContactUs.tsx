@@ -12,11 +12,11 @@ const ContactUs = () => {
 	if (!isReady) return null;
 	return (
 		<>
-			<Container className="my-4">
-				<div className="pageHeading">
-					<h1>Contact Us</h1>
-				</div>
-			</Container>
+			<div className="page-heading-wrapper">
+				<Container>
+					<div className="pageHeading text-center">CONTACT US</div>
+				</Container>
+			</div>
 			<Container>
 				<ContactUsForm />
 			</Container>

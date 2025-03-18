@@ -24,9 +24,7 @@ const ImageCard = ({ card }: Props) => {
 				<Card.Body>
 					<Card.Title>{card.title}</Card.Title>
 					<Card.Text>{card.text}</Card.Text>
-					<Card.Text className="our-services-text normal">
-						{card.description}
-					</Card.Text>
+					<Card.Text className="text normal">{card.description}</Card.Text>
 				</Card.Body>
 			</Card>
 		</>

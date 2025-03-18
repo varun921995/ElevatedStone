@@ -17,15 +17,13 @@ const TestimonialCarousel = () => {
 							key={item.id}
 							className="d-flex justify-content-center mb-3">
 							<Card className="text-center rounded-3 testimonial-card ">
-								<Card.Body className="text-white">
+								<Card.Body>
 									<Card.Title style={{ textTransform: "uppercase" }}>
 										<b>{item.title}</b>
 									</Card.Title>
 									<hr></hr>
-									<Card.Text className="our-services-text">
-										{item.text}
-									</Card.Text>
-									<Card.Text className="our-services-text">
+									<Card.Text className="text dark-text ">{item.text}</Card.Text>
+									<Card.Text className="text dark-text ">
 										<i>
 											<b>- {item.name}</b>
 										</i>

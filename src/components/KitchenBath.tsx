@@ -20,27 +20,32 @@ const KitchenBath = () => {
 	if (!isReady) return null;
 	return (
 		<>
-			<Container className="my-4">
-				<div className="pageHeading">
-					<h1>Kitchen & Bath</h1>
-				</div>
-			</Container>
+			<div className="page-heading-wrapper">
+				<Container>
+					<div className="pageHeading text-center">KITCHEN & BATH</div>
+				</Container>
+			</div>
+			<div className="background-wrapper">
+				<Container>
+					<Row>
+						<Col>
+							<p className="text">
+								Our Primary service is to supply and service Kitchen and
+								Bathroom construction or renovation projects. Quartz and
+								Porcelain products have been the most popular choices for
+								Kitchen and Bath design for years, and adding our expertise in
+								fabrication and installation, allows Atlantic Canadian clients
+								world class access to the best end quality stone in the market.
+								We work hand in hand with Designers and Architects to ensure
+								that we can elevate their client’s home design needs! For more
+								information and examples of our work, please check out our
+								Instagram page!
+							</p>
+						</Col>
+					</Row>
+				</Container>
+			</div>
 			<Container>
-				<Row>
-					<Col>
-						<p className="our-services-text">
-							Our Primary service is to supply and service Kitchen and Bathroom
-							construction or renovation projects. Quartz and Porcelain products
-							have been the most popular choices for Kitchen and Bath design for
-							years, and adding our expertise in fabrication and installation,
-							allows Atlantic Canadian clients world class access to the best
-							end quality stone in the market. We work hand in hand with
-							Designers and Architects to ensure that we can elevate their
-							client’s home design needs! For more information and examples of
-							our work, please check out our Instagram page!
-						</p>
-					</Col>
-				</Row>
 				<Row>
 					<Col xs={12} sm={12} md={6} lg={3} className="p-3">
 						<div className="zoom-img">

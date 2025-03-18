@@ -1,168 +1,122 @@
+/* Base Styles */
+
+hr {
+	color: #ddd9d1;
+}
+
+body {
+	background: #353333;
+}
+
 .logo {
-	height: 6rem;
-	width: 6rem;
-	@media only screen and (max-width: 992px) and (min-width: 480px) {
-		height: 4rem;
-		width: 4rem;
-	}
-	@media only screen and (max-width: 480px) {
-		height: 3rem;
-		width: 3rem;
-	}
+	height: auto;
+	width: 20vw;
+}
+.es-navbar {
+	background-color: #252323;
+}
+
+.nav-link.nav-text {
+	color: #ddd9d1 !important;
+	font-family: "halyard-text", sans-serif;
+}
+.nav-link.nav-text:hover {
+	border-bottom: thin solid #ddd9d1;
+}
+.nav-link.nav-text.active {
+	font-weight: bolder;
+	font-size: larger;
+	border-bottom: thin solid #ddd9d1;
+}
+
+.navbar-toggler {
+	border: none !important;
+	box-shadow: none !important; /* Removes focus outline */
+	outline: none !important;
+}
+.navbar-collapse {
+	padding-left: 2%;
+}
+
+.page-heading-wrapper {
+	background: url("/img/texture-background.jpg");
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+	padding: 40px 0px;
+}
+
+.pageHeading {
+	color: #ddd9d1 !important;
+	font-family: "halyard-text", sans-serif;
+	font-style: normal;
+	font-size: 4rem;
+	font-weight: lighter;
+}
+
+.subHeading {
+	font-family: "halyard-text", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 24px;
+	color: #ddd9d1;
+}
+
+.background-wrapper {
+	padding: 40px 0px;
 }
 
 .text {
 	font-family: "Funnel Display", serif;
-	font-optical-sizing: auto;
-	font-weight: 300;
+	font-weight: lighter;
 	font-style: normal;
-	font-size: 24px;
-	color: #286dc7;
-	@media only screen and (max-width: 992px) {
-		font-size: 18px;
-	}
+	font-size: 1.25rem;
+	text-align: start;
+	color: #ddd9d1;
 }
 
-.active.es-navbar {
-	color: #286dc7 !important;
-	font-weight: bold;
-	border-bottom-color: #286dc7;
-	border-style: solid;
-	border-bottom-width: thin;
+.dark-text {
+	color: #414141;
 }
-.nav-link.es-navbar {
-	color: #636262;
-	text-decoration: none;
-	font-size: medium;
-	@media only screen and (max-width: 432px) {
-		font-size: 16px;
-	}
-}
-.nav-link.es-navbar:hover {
-	color: #286dc7 !important; /* Default color */
-	text-decoration: none;
-	border-bottom-color: #286dc7;
-	border-style: solid;
-	border-bottom-width: thin;
-}
-.navbar-text {
-	color: #286dc7 !important;
-	font-family: "Roboto", serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
-	font-variation-settings: "wdth" 100;
-	font-size: 46px;
-	margin-left: 2.5%;
-	vertical-align: bottom;
-	@media only screen and (max-width: 480px) {
-		font-size: 24px;
-	}
-	@media only screen and (max-width: 992px) and (min-width: 480px) {
-		font-size: 32px;
-	}
-}
-.navbar-toggler {
-	padding: 10px 10px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-.navbar-collapse {
-	@media (max-width: 992px) {
-		padding-left: 2.5%;
-	}
-}
-.pageHeading {
-	color: #286dc7 !important;
-	font-family: "Funnel Display", serif;
-	font-style: normal;
-}
-
-.our-services-subHeading {
-	font-family: "Funnel Display", serif;
-	font-weight: 600;
-	font-style: normal;
-	letter-spacing: 2px;
-	font-size: 24px;
-	color: #286dc7;
-}
-
-.our-services-text {
-	font-family: "Funnel Display", serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 18px;
-	text-align: justify;
-}
-
 .our-services-text.normal {
 	font-family: "Funnel Display", serif;
 	font-weight: 300;
-	font-style: normal;
 	font-size: 16px;
 	text-align: start;
 }
-/* hr {
-	border: none;
-	border-top: 3px double #286dc7;
-	color: #286dc7;
-	overflow: visible;
-	text-align: center;
-	height: 5px;
-}
-
-hr::after {
-	background: #fff;
-	content: "§";
-	padding: 0 4px;
-	position: relative;
-	top: -13px;
-} */
 
 .zoom-img img {
 	transition: all 0.4s ease;
 }
 
 .zoom-img img:hover {
-	overflow: auto;
 	transform: scale(0.9);
 }
 
-.footer-company-title {
-	color: #286dc7;
-	font-size: 32px;
-	font-family: "Roboto", serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
-	font-variation-settings: "wdth" 100;
-	@media only screen and (max-width: 480px) {
-		font-size: 20px;
-	}
+.page-footer-wrapper {
+	background: url("/img/texture-background_2.jpg");
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+	padding: 40px 20px;
+	background-repeat: round;
 }
+
 .footer-text {
-	color: #636262;
+	color: #ddd9d1;
+	font-size: 0.85rem;
 }
-.es-image {
-	height: 100%;
+
+.es-image,
+.kitchen-bath-imag {
 	width: 100%;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+	/* border-radius: 10px; */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.39);
 }
 
 .kitchen-bath-imag {
 	min-height: 250px !important;
 	max-height: 250px !important;
-	width: 100%;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }
 
 .es-carousel-image {
 	min-width: 75vw;
-	/* max-width: 100vw; */
 	max-height: 75vh;
 	margin: auto;
 	filter: brightness(0.75);
@@ -172,6 +126,7 @@ hr::after {
 	width: 100%;
 	overflow: clip;
 }
+
 .home-page-zoom-img img {
 	width: 100%;
 	aspect-ratio: 1 / 1;
@@ -197,28 +152,64 @@ hr::after {
 
 .dynamic-heading {
 	font-size: 3rem;
+	color: #414141;
+}
+
+.testimonial-card {
+	background: url("/img/texture-background_2.jpg");
+	background-repeat: round;
+	overflow: hidden;
+	width: 100%;
+	height: 250px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optimized Media Queries */
+@media (max-width: 992px) {
+	.text {
+		font-size: 18px;
+	}
+	.navbar-text {
+		font-size: 32px;
+	}
 }
 
 @media (max-width: 768px) {
-	.dynamic-heading {
-		font-size: 2rem;
+	.logo {
+		height: auto;
+		width: 40vw;
+	}
+	.navbar-text {
+		font-size: 28px;
 	}
 }
 
 @media (max-width: 576px) {
+	.logo {
+		height: auto;
+		width: 50vw;
+	}
+
+	.navbar-text {
+		font-size: 24px;
+	}
+	.pageHeading {
+		font-size: 3rem;
+	}
+
+	.footer-company-title {
+		font-size: 20px;
+	}
 	.dynamic-heading {
-		font-size: 1.5rem;
+		font-size: 2rem;
+	}
+	.testimonial-card {
+		height: 450px;
 	}
 }
 
-.testimonial-card {
-	background-color: #3d6dac;
-	overflow: hidden;
-	width: 100%;
-	height: 250px;
-	@media (max-width: 576px) {
-		height: 450px;
+@media (max-width: 432px) {
+	.nav-link.es-navbar {
+		font-size: 16px;
 	}
-
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
