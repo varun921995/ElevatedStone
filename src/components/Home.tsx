@@ -5,7 +5,6 @@ import k1 from "/img/KitchenAndBath/1.jpg";
 import { useState, useLayoutEffect } from "react";
 import TestimonialCarousel from "./Partials/TestimonialCarousel";
 import { NavLink } from "react-router-dom";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
 	const [isReady, setIsReady] = useState(false);
