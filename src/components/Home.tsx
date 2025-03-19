@@ -1,7 +1,5 @@
-import { Container, Image, Nav } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import fabrication1 from "/img/OurServices/image4.jpg";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { NavLink } from "react-router-dom";
 import { useState, useLayoutEffect } from "react";
 import TestimonialCarousel from "./Partials/TestimonialCarousel";
 const Home = () => {
@@ -17,13 +15,7 @@ const Home = () => {
 			<Container fluid className="home-page-img-container my-3">
 				<div className="home-page-zoom-img">
 					<Image src={fabrication1} className="es-carousel-image" />
-					<Nav.Link as={NavLink} to="/ourServices">
-						<div className="bottom-left">
-							<h1 style={{ color: "#ddd9d1" }}>
-								FABRICATION <MdOutlineKeyboardArrowRight />
-							</h1>
-						</div>
-					</Nav.Link>
+					
 				</div>
 			</Container>
 			<Container className="my-4">

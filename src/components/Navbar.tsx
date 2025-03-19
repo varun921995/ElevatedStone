@@ -28,8 +28,8 @@ const ESNavbar = () => {
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Container>
 						<Row>
-							<Nav className="me-auto d-flex justify-content-evenly align-items-center">
-								{/* Render Nav.Link as React Router Link */}
+						<Nav className="w-100 justify-content-start d-lg-flex justify-content-between  align-items-lg-center">
+						{/* Render Nav.Link as React Router Link */}
 								<Nav.Link
 									as={NavLink}
 									to="/"
