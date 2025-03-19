@@ -22,7 +22,7 @@ const PlanningCare = () => {
 					<Row>
 						<Col>
 							<p className="text">
-								At Elevated Stone Design Inc., our Customer Care Strategy is
+								At Elevated Stone Design, our Customer Care Strategy is
 								centred around creating exceptional experiences for our clients
 								through every phase of their journey with us. We prioritize
 								quality control with thorough inspections and client approval
