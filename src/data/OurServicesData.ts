@@ -7,7 +7,7 @@ export default [
 							project. Our CEO Ryan is our active templator, using the LT 55
 							2d3D laser measurement system, he is able to ensure that the
 							fabrication team has industry leading accurate measurements. Ryan
-							is so skilled in this skill that he is one of few templators in
+							is so skilled in this trade that he is one of few templators in
 							Canada who can template a quartz backsplash during his initial
 							template, saving the client the cost and time of a 2nd templating
 							visit.`,
@@ -18,7 +18,7 @@ export default [
 		heading: "Fabrication",
 		text: `Our Fabrication is second to none in Eastern Canada. As we
 							continue to work towards the build of our own Fabrication shop
-							here in Dartmouth, Nova Scotia, we are still able to service the
+							here in Dartmouth, Nova Scotia, we are able to service the
 							entire maritimes due to a strategic partnership with Rouleau
 							Granit. Rouleau Granit has been Eastern Canada’s foremost leader
 							in premium stone fabrication and are able to handle both
