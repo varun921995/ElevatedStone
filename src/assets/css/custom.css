@@ -1,219 +1,214 @@
 /* Base Styles */
 
 hr {
-	color: #ddd9d1;
+  color: #ddd9d1;
 }
 
 body {
-	background: #353333;
+  background: #353333;
 }
 
 .logo {
-	height: auto;
-	width: 20vw;
+  height: auto;
+  width: 20vw;
 }
 .es-navbar {
-	background-color: #252323;
+  background-color: #252323;
 }
 
 .nav-link.nav-text {
-	color: #ddd9d1 !important;
-	font-family: "halyard-text", sans-serif;
+  color: #ddd9d1 !important;
+  font-family: "halyard-text", sans-serif;
 }
 .nav-link.nav-text:hover {
-	border-bottom: thin solid #ddd9d1;
+  border-bottom: thin solid #ddd9d1;
 }
 .nav-link.nav-text.active {
-	font-weight: bolder;
-	font-size: larger;
-	border-bottom: thin solid #ddd9d1;
+  font-weight: bolder;
+  font-size: larger;
+  border-bottom: thin solid #ddd9d1;
 }
 
 .navbar-toggler {
-	border: none !important;
-	box-shadow: none !important; /* Removes focus outline */
-	outline: none !important;
+  border: none !important;
+  box-shadow: none !important; /* Removes focus outline */
+  outline: none !important;
 }
 .navbar-collapse {
-	padding-left: 2%;
+  padding-left: 2%;
 }
 
 .page-heading-wrapper {
-	background: url("/img/texture-background.jpg");
-	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-	padding: 40px 0px;
+  background: url("/img/texture-background.jpg");
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  padding: 40px 0px;
 }
 
 .pageHeading {
-	color: #ddd9d1 !important;
-	font-family: "halyard-text", sans-serif;
-	font-style: normal;
-	font-size: 4rem;
-	font-weight: lighter;
+  color: #ddd9d1 !important;
+  font-family: "halyard-text", sans-serif;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: lighter;
 }
 
 .subHeading {
-	font-family: "halyard-text", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 24px;
-	color: #ddd9d1;
+  font-family: "halyard-text", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #ddd9d1;
 }
 
 .background-wrapper {
-	padding: 40px 0px;
+  padding: 40px 0px;
 }
 
 .text {
-	font-family: "Funnel Display", serif;
-	font-weight: lighter;
-	font-style: normal;
-	font-size: 1.25rem;
-	text-align: start;
-	color: #ddd9d1;
+  font-family: "Funnel Display", serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1.25rem;
+  text-align: start;
+  color: #ddd9d1;
 }
 
 .dark-text {
-	color: #414141;
+  color: #414141;
 }
 .our-services-text.normal {
-	font-family: "Funnel Display", serif;
-	font-weight: 300;
-	font-size: 16px;
-	text-align: start;
+  font-family: "Funnel Display", serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: start;
 }
 
 .zoom-img img {
-	transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .zoom-img img:hover {
-	transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .page-footer-wrapper {
-	background: url("/img/texture-background_2.jpg");
-	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-	padding: 40px 20px;
-	background-repeat: round;
+  background: url("/img/texture-background_2.jpg");
+  padding: 40px 20px;
+  background-repeat: round;
 }
 
 .footer-text {
-	color: #ddd9d1;
-	font-size: 0.85rem;
+  color: #ddd9d1;
+  font-size: 0.85rem;
 }
 
 .es-image,
 .kitchen-bath-imag {
-	width: 100%;
-	/* border-radius: 10px; */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.39);
+  width: 100%;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.39);
 }
 
 .kitchen-bath-imag {
-	min-height: 250px !important;
-	max-height: 250px !important;
+  min-height: 250px !important;
+  max-height: 100% !important;
 }
 
 .es-carousel-image {
-	min-width: 75vw;
-	max-height: 75vh;
-	margin: auto;
-	filter: brightness(0.75);
+  min-width: 75vw;
+  max-height: 75vh;
+  margin: auto;
+  filter: brightness(0.75);
 }
 
 .home-page-zoom-img {
-	width: 100%;
-	overflow: clip;
+  width: 100%;
+  overflow: clip;
 }
 
 .home-page-zoom-img img {
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	transition: all 3s ease;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: all 3s ease;
 }
 
 .home-page-zoom-img img:hover {
-	transform: scale(1.09);
+  transform: scale(1.09);
 }
 
 .bottom-left {
-	position: absolute;
-	bottom: 15%;
-	left: 5%;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
 }
 
 .home-page-img-container {
-	position: relative;
-	text-align: center;
-	color: white;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .dynamic-heading {
-	font-size: 3rem;
-	color: #414141;
+  font-size: 3rem;
+  color: #414141;
 }
 
 .testimonial-card {
-	background: url("/img/texture-background_2.jpg");
-	background-repeat: round;
-	overflow: hidden;
-	width: 100%;
-	height: 250px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: url("/img/texture-background_2.jpg");
+  background-repeat: round;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Optimized Media Queries */
 
 @media (max-width: 1200px) {
-	
-	.nav-link.nav-text {
-		color: #ddd9d1 !important;
-		font-family: "halyard-text", sans-serif;
-		font-size: 0.95rem;
-	}
+  .nav-link.nav-text {
+    color: #ddd9d1 !important;
+    font-family: "halyard-text", sans-serif;
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 992px) {
-	.text {
-		font-size: 18px;
-	}
-
+  .text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
-	.logo {
-		height: auto;
-		width: 40vw;
-	}
-
+  .logo {
+    height: auto;
+    width: 40vw;
+  }
 }
 
 @media (max-width: 576px) {
-	.logo {
-		height: auto;
-		width: 50vw;
-	}
+  .logo {
+    height: auto;
+    width: 50vw;
+  }
 
-	
-	.pageHeading {
-		font-size: 3rem;
-	}
+  .pageHeading {
+    font-size: 3rem;
+  }
 
-	.footer-company-title {
-		font-size: 20px;
-	}
-	.dynamic-heading {
-		font-size: 2rem;
-	}
-	.testimonial-card {
-		height: 450px;
-	}
+  .footer-company-title {
+    font-size: 20px;
+  }
+  .dynamic-heading {
+    font-size: 2rem;
+  }
+  .testimonial-card {
+    height: 450px;
+  }
 }
 
 @media (max-width: 432px) {
-	.nav-link.es-navbar {
-		font-size: 16px;
-	}
+  .nav-link.es-navbar {
+    font-size: 16px;
+  }
 }

@@ -67,10 +67,10 @@ const ESNavbar = () => {
 								</Nav.Link>
 								<Nav.Link
 									as={NavLink}
-									to="/aboutUs"
+									to="/productPartners"
 									className="nav-text"
 									onClick={handleNavItemClick}>
-									About Us
+									Product Partners
 								</Nav.Link>
 								<Nav.Link
 									as={NavLink}
@@ -79,6 +79,14 @@ const ESNavbar = () => {
 									onClick={handleNavItemClick}>
 									Contact Us
 								</Nav.Link>
+								<Nav.Link
+									as={NavLink}
+									to="/aboutUs"
+									className="nav-text"
+									onClick={handleNavItemClick}>
+									About Us
+								</Nav.Link>
+								
 								<Nav.Link
 									as={NavLink}
 									to="/contactUs"
