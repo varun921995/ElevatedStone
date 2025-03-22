@@ -13,52 +13,64 @@ const Partners = () => {
         <Container>
           <Row>
             <Col>
-              <Image
-                src={cambria}
-                className=""
-                height={"150px"}
-                width={"150px"}
-              ></Image>
+              <a href="https://www.cambriausa.com/syndicated-content/design-palette/">
+                <Image
+                  src={cambria}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
             </Col>
             <Col>
-              <Image
-                src={silestone}
-                className=""
-                height={"150px"}
-                width={"150px"}
-              ></Image>
+              <a href="https://ca.silestone.com/colours/">
+                <Image
+                  src={silestone}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
             </Col>
             <Col>
-              <Image
-                src={caesarstone}
-                className=""
-                height={"150px"}
-                width={"150px"}
-              ></Image>
+              <a href="https://www.caesarstone.ca/collections/">
+                <Image
+                  src={caesarstone}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
             </Col>
             <Col>
-              <Image
-                src={dektone}
-                className=""
-                height={"150px"}
-                width={"150px"}
-              ></Image>
+              <a href="https://www.dekton.ca/colours/">
+                <Image
+                  src={dektone}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
             </Col>
             <Col>
-              <Image
-                src={hanstone}
-                className=""
-                height={"150px"}
-                width={"150px"}
-              ></Image>
+              <a href="https://hanstone.ca/en/">
+                <Image
+                  src={hanstone}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
             </Col>
             <Col>
-              <Image
-                src={florim}
-                className=""
-                height={"150px"}
-                width={"150px"}
-              ></Image>
+              <a href="https://www.florim.com/en">
+                <Image
+                  src={florim}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
             </Col>
           </Row>
         </Container>
