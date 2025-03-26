@@ -27,7 +27,7 @@ export default [
     text: "Lead Secretary",
     description: [
       "Lisa is a dedicated office administrator and small business owner with a creative twist. Lisa has over 30 years of business and office admin experience. When Lisa is not managing day-to-day operations, you can find her repurposing vintage treasures into unique one of a kind pieces.",
-      "Family is the heart of everything Lisa does. She cherishes moments spent with loved ones, especially her husband, Mike and her loyal dog Henry and precious grandchildren as an avid collector. She delights in scouring antique shops and markets for hidden gems.",
+      "Family is the heart of everything Lisa does. She cherishes moments spent with loved ones, especially her husband, Mike and her loyal dog Henry and precious grandchildren. As an avid collector. She delights in scouring antique shops and markets for hidden gems.",
       "As a professional, Lisa is committed to excellence and integrity as a maker and up cycle. She is driven by a passion for sustainability and reducing waste. Lisa’s ultimate goal is to leave a lasting positive impact on the world for future generations.",
     ],
     image: "/img/team/Lisa O’Neill.jpeg",

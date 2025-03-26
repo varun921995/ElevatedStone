@@ -182,14 +182,14 @@ body {
 @media (max-width: 768px) {
   .logo {
     height: auto;
-    width: 40vw;
+    width: 50vw;
   }
 }
 
 @media (max-width: 576px) {
   .logo {
     height: auto;
-    width: 50vw;
+    width: 60vw;
   }
 
   .pageHeading {
