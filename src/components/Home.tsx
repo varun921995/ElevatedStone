@@ -45,10 +45,11 @@ const Home = () => {
       </div>
       <Container className="my-4">
         <span className="text">
-          We will happily pair you with our closest partnered store. Our team
-          will happily quote your project for you through a partnered store, and
-          give you a total cost landed for your project, including installation,
-          templating and shipping.
+          We make your project hassle-free by connecting you with our closest
+          partnered store. Our team will provide a comprehensive quote, covering
+          everything from installation and templating to shipping. Get a
+          seamless experience with transparent pricing—all through our trusted
+          partners.
         </span>
       </Container>
       <Container className="my-4">
