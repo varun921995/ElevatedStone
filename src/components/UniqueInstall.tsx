@@ -1,8 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ModalImage from "react-modal-image";
-import ui1 from "/img/UniqueInstalls/ui1.jpg";
-import ui2 from "/img/UniqueInstalls/ui2.jpg";
-import ui3 from "/img/UniqueInstalls/ui3.jpg";
+import uniqueInstallImages from "../data/uniqueInstallImages";
 import ContactUsFooter from "./Partials/ContactUsFooter";
 import Partners from "./Partials/Partners";
 const UniqueInstall = () => {
@@ -36,39 +34,19 @@ const UniqueInstall = () => {
       </div>
       <Container className="mb-5">
         <Row>
-          <Col xs={12} sm={12} md={6} lg={3} className="p-3">
-            <div className="zoom-img">
-              <ModalImage
-                small={ui1}
-                large={ui1}
-                alt="Unique Install 1"
-                className="kitchen-bath-imag "
-                hideDownload={true}
-              />
-            </div>
-          </Col>
-          <Col xs={12} sm={12} md={6} lg={3} className="p-3">
-            <div className="zoom-img">
-              <ModalImage
-                small={ui2}
-                large={ui2}
-                alt="Unique Install 2"
-                className="kitchen-bath-imag "
-                hideDownload={true}
-              />
-            </div>
-          </Col>
-          <Col xs={12} sm={12} md={6} lg={3} className="p-3">
-            <div className="zoom-img">
-              <ModalImage
-                small={ui3}
-                large={ui3}
-                alt="Unique Install 3"
-                className="kitchen-bath-imag "
-                hideDownload={true}
-              />
-            </div>
-          </Col>
+          {uniqueInstallImages.map((ui, index) => (
+            <Col xs={12} sm={12} md={6} lg={3} className="p-3" key={index}>
+              <div className="zoom-img">
+                <ModalImage
+                  small={ui.path}
+                  large={ui.path}
+                  alt="Unique Install 1"
+                  className="kitchen-bath-imag"
+                  hideDownload={true}
+                />
+              </div>
+            </Col>
+          ))}
         </Row>
       </Container>
       <ContactUsFooter></ContactUsFooter>
