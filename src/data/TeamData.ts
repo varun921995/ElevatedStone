@@ -39,8 +39,7 @@ export default [
     description: [
       "Cait Aubé is a dedicated countertop business owner based in Dartmouth, Nova Scotia, specializing in high-quality installations of Quartz, Porcelain, Granite, and Marble countertops. Together with her husband Ryan, they started their first business in 2017, and it has since grown into multiple entities to bring us to Elevated Stone Design today. While managing multiple roles in her business and raising three beautiful girls at home, Cait enjoys helping in the designing aspect of projects and remains committed to quality and customer satisfaction, personally handling majority of the operations to ensure each project meets the highest standards. Offering beautiful sample racks and custom countertop displays, Cait aims to provide clients with an exceptional experience from stone selection to the final installation. With a team of experienced templaters, installers and a focus on customer experience, Cait is proud to deliver stunning countertops that enhance any space.",
     ],
-    image:
-      "https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=",
+    image: "/img/team/Cait.jpg",
   },
   {
     id: "5",
@@ -50,7 +49,6 @@ export default [
       "Dean’s career has seen him progress through almost every aspect of the stone world. Starting out as a quarry labourer, slowly talking his way into a sales role with the quarry’s showroom. Dean has 30+ years of experience selling everything stone related from full slabs to now leveraging his experience and product knowledge to our clients to make sure the client gets the exact stone that they desire.",
       "Dean splits his time between Halifax and Stanstead Quebec, but no matter where he is he can most likely be found with a golf club in his hand or spending time with his loving Wife and Granddaughter.",
     ],
-    image:
-      "https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=",
+    image: "/img/team/Dean.jpg",
   },
 ];
