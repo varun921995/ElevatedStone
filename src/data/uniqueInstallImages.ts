@@ -11,4 +11,10 @@ export default [
   //   { imageName: "ui10", path: "/img/UniqueInstalls/ui10.jpg" },
   { imageName: "ui11", path: "/img/UniqueInstalls/ui11.jpg" },
   { imageName: "ui12", path: "/img/UniqueInstalls/ui12.jpg" },
+  { imageName: "ui13", path: "/img/UniqueInstalls/ui13.jpeg" },
+  { imageName: "ui14", path: "/img/UniqueInstalls/ui14.jpeg" },
+  { imageName: "ui15", path: "/img/UniqueInstalls/ui15.jpeg" },
+  { imageName: "ui16", path: "/img/UniqueInstalls/ui16.jpeg" },
+  { imageName: "ui16", path: "/img/UniqueInstalls/ui17.jpeg" },
+  { imageName: "ui16", path: "/img/UniqueInstalls/ui18.jpeg" },
 ];

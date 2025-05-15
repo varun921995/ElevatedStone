@@ -79,14 +79,14 @@ const ESNavbar = () => {
                 >
                   Product Types
                 </Nav.Link>
-                <Nav.Link
+                {/* <Nav.Link
                   as={NavLink}
                   to="/contactUs"
                   className="nav-text"
                   onClick={handleNavItemClick}
                 >
                   Contact Us
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link
                   as={NavLink}
                   to="/aboutUs"
@@ -103,7 +103,7 @@ const ESNavbar = () => {
                 >
                   <Button className="mx-1" variant="btn btn-outline-light">
                     <CgNotes className="mx-1" />
-                    Get Quote
+                    Contact Us
                   </Button>
                 </Nav.Link>
               </Nav>

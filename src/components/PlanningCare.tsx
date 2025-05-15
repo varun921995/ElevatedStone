@@ -33,9 +33,9 @@ const PlanningCare = () => {
                 Our commitment to customer satisfaction is reflected in our
                 proactive approach to gathering feedback via emails and social
                 media, allowing us to continuously improve our services. We
-                leverage advanced tools like Salesforce and Excel to efficiently
-                manage warranty claims, ensuring timely and effective
-                resolutions.
+                leverage advanced tools like Salesforce to optimize the client
+                experience across our entire organization & efficiently manage
+                warranty claims, ensuring timely and effective resolutions.
               </p>
               <p className="text">
                 Our team is dedicated to providing personalized support, with a
@@ -51,9 +51,9 @@ const PlanningCare = () => {
                 members are trained in necessary safety protocols, backed by
                 comprehensive insurance coverage. Our Customer Care Strategy is
                 integral to our mission of delivering premium stone fabrication
-                and installation services across the Maritime provinces and
-                Quebec, as we aim to expand our footprint and achieve our
-                ambitious growth goals.
+                and installation services across the Maritime provinces as we
+                aim to expand our footprint and achieve our ambitious growth
+                goals.
               </p>
             </Col>
           </Row>

@@ -22,17 +22,6 @@ export default [
     image: "/img/team/Sam.jpeg",
   },
   {
-    id: "3",
-    title: "Lisa O’Neill",
-    text: "Lead Secretary",
-    description: [
-      "Lisa is a dedicated office administrator and small business owner with a creative twist. Lisa has over 30 years of business and office admin experience. When Lisa is not managing day-to-day operations, you can find her repurposing vintage treasures into unique one of a kind pieces.",
-      "Family is the heart of everything Lisa does. She cherishes moments spent with loved ones, especially her husband, Mike and her loyal dog Henry and precious grandchildren. As an avid collector. She delights in scouring antique shops and markets for hidden gems.",
-      "As a professional, Lisa is committed to excellence and integrity as a maker and up cycle. She is driven by a passion for sustainability and reducing waste. Lisa’s ultimate goal is to leave a lasting positive impact on the world for future generations.",
-    ],
-    image: "/img/team/Lisa O’Neill.jpeg",
-  },
-  {
     id: "4",
     title: "Cait Aube",
     text: "Owner and Chief of Staff",
@@ -44,7 +33,7 @@ export default [
   {
     id: "5",
     title: "Dean Rediker",
-    text: "Territory Sales Manager",
+    text: "Sales",
     description: [
       "Dean’s career has seen him progress through almost every aspect of the stone world. Starting out as a quarry labourer, slowly talking his way into a sales role with the quarry’s showroom. Dean has 30+ years of experience selling everything stone related from full slabs to now leveraging his experience and product knowledge to our clients to make sure the client gets the exact stone that they desire.",
       "Dean splits his time between Halifax and Stanstead Quebec, but no matter where he is he can most likely be found with a golf club in his hand or spending time with his loving Wife and Granddaughter.",
