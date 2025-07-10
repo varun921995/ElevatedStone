@@ -23,9 +23,9 @@ const Partners = () => {
               </a>
             </Col>
             <Col>
-              <a href="https://hanstone.ca/en/">
+              <a href="https://www.dekton.ca/colours/">
                 <Image
-                  src={hanstone}
+                  src={dektone}
                   className=""
                   height={"150px"}
                   width={"150px"}
