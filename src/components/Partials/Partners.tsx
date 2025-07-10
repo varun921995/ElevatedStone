@@ -13,9 +13,19 @@ const Partners = () => {
         <Container>
           <Row>
             <Col>
-              <a href="https://www.cambriausa.com/syndicated-content/design-palette/">
+              <a href="https://hanstone.ca/en/">
                 <Image
-                  src={cambria}
+                  src={hanstone}
+                  className=""
+                  height={"150px"}
+                  width={"150px"}
+                ></Image>
+              </a>
+            </Col>
+            <Col>
+              <a href="https://hanstone.ca/en/">
+                <Image
+                  src={hanstone}
                   className=""
                   height={"150px"}
                   width={"150px"}
@@ -43,25 +53,16 @@ const Partners = () => {
               </a>
             </Col>
             <Col>
-              <a href="https://www.dekton.ca/colours/">
+              <a href="https://www.cambriausa.com/syndicated-content/design-palette/">
                 <Image
-                  src={dektone}
+                  src={cambria}
                   className=""
                   height={"150px"}
                   width={"150px"}
                 ></Image>
               </a>
             </Col>
-            <Col>
-              <a href="https://hanstone.ca/en/">
-                <Image
-                  src={hanstone}
-                  className=""
-                  height={"150px"}
-                  width={"150px"}
-                ></Image>
-              </a>
-            </Col>
+
             <Col>
               <a href="https://www.florim.com/en">
                 <Image
