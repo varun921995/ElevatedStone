@@ -8,10 +8,10 @@ const AboutUsAccordion = () => {
         <Accordion.Item eventKey={t.id} key={t.id}>
           <Accordion.Header>
             <Col xs={6} sm={6} md={3} lg={2}>
-              {t.id === "4" && (
+              {t.id === "2" && (
                 <Image src={t.image} height={255} width={150}></Image>
               )}
-              {t.id != "4" && (
+              {t.id != "2" && (
                 <Image src={t.image} height={175} width={150}></Image>
               )}
             </Col>

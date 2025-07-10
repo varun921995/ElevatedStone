@@ -11,18 +11,9 @@ export default [
     ],
     image: "/img/team/Ryan.png",
   },
+
   {
     id: "2",
-    title: "Sam Quackenbush",
-    text: "Director of Operations",
-    description: [
-      "Sam honed his management and business development skills during his studies in Dalhousie University's Masters of Business Administration program. Along with short term Project Management and Project Finance Analyst roles with IBM and Canada's Ocean Supercluster, Sam brings 3+ years of Public Sector experience, where he worked hand in hand with Nova Scotian small businesses to ensure that they are able to secure sufficient grants and funding. Sam’s focus on internal company growth strategy and change management practices have allowed Elevated Stone Design to scale at an appropriate pace, ensuring that company standard of quality craftsmanship and premium customer service are the always at the forefront of operations.",
-      "When Sam is not working he can most likely be found on a golf course, coaching youth sports, or spending time with his friends and family in the Halifax area.",
-    ],
-    image: "/img/team/Sam.jpeg",
-  },
-  {
-    id: "4",
     title: "Cait Aube",
     text: "Owner and Chief of Staff",
     description: [
@@ -31,13 +22,13 @@ export default [
     image: "/img/team/Cait.jpg",
   },
   {
-    id: "5",
+    id: "3",
     title: "Dean Rediker",
     text: "Sales",
     description: [
       "Dean’s career has seen him progress through almost every aspect of the stone world. Starting out as a quarry labourer, slowly talking his way into a sales role with the quarry’s showroom. Dean has 30+ years of experience selling everything stone related from full slabs to now leveraging his experience and product knowledge to our clients to make sure the client gets the exact stone that they desire.",
       "Dean splits his time between Halifax and Stanstead Quebec, but no matter where he is he can most likely be found with a golf club in his hand or spending time with his loving Wife and Granddaughter.",
     ],
-    image: "/img/team/Dean.jpg",
+    image: "/img/team/person_placeholder.png",
   },
 ];
